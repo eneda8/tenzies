@@ -3,6 +3,7 @@ import Die from "./Die";
 import {nanoid} from "nanoid";
 import Confetti from "react-confetti";
 import useWindowSize from 'react-use-window-size';
+import heart from "/heart.svg";
 
 export default function App() {
     function generateNewDie() {
@@ -128,6 +129,9 @@ export default function App() {
             }
             <button className="roll-dice" onClick={rollDice}>{gameState.tenzies ? "New Game" : "Roll"}</button>
           </main>
+          <p className="portfolio-link">made with <img className="heart" src={heart}></img> by 
+            <a href="https://eneda.dev">eneda</a>
+          </p>
         </div>
     );
 }
