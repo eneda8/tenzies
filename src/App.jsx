@@ -119,8 +119,8 @@ export default function App() {
             <h1 className="title">Tenzies</h1>
             {!gameState.tenzies && <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>}
             <div className='timer-container'>
-                <h3 className='timer'>Timer: {String(gameState.time.hours).padStart(2, '0')}:{String(gameState.time.minutes).padStart(2, '0')}:{String(gameState.time.seconds).padStart(2, '0')}</h3>
-                <h3 className='roll-count'>Count: {gameState.roll}</h3>
+                <h3 className='timer'>Time: {String(gameState.time.hours).padStart(2, '0')}:{String(gameState.time.minutes).padStart(2, '0')}:{String(gameState.time.seconds).padStart(2, '0')}</h3>
+                <h3 className='roll-count'>Rolls: {gameState.roll}</h3>
             </div>
             {!gameState.tenzies && <div className="dice-container">{diceElements}</div>}
             {gameState.tenzies && 
